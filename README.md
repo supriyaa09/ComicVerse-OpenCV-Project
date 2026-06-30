@@ -104,7 +104,7 @@ ComicVerse/
 Install Python dependencies:
 
 ```powershell
-cd "C:\Users\Abhishek\Downloads\ComicVerse(v1)\ComicVerse"
+cd <Project_Directory>
 python -m pip install -r requirements.txt
 ```
 
