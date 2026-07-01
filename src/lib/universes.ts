@@ -11,6 +11,7 @@ export interface Universe {
   gradient: string;
   shadow: string;
   font: string;
+  coverImage: string;
   // Visual processing settings used when "generating" panels
   filter: {
     saturate: number;
@@ -38,6 +39,7 @@ export const UNIVERSES: Record<UniverseId, Universe> = {
     gradient: "var(--gradient-manga)",
     shadow: "var(--shadow-glow-manga)",
     font: "var(--font-display)",
+    coverImage: "/covers/manga-cover.jpg",
     filter: {
       saturate: 0,
       contrast: 1.8,
@@ -61,6 +63,7 @@ export const UNIVERSES: Record<UniverseId, Universe> = {
     gradient: "var(--gradient-cartoon)",
     shadow: "var(--shadow-glow-cartoon)",
     font: "var(--font-display)",
+    coverImage: "/covers/cartoon-cover.jpg",
     filter: {
       saturate: 2.2,
       contrast: 1.4,
@@ -84,6 +87,7 @@ export const UNIVERSES: Record<UniverseId, Universe> = {
     gradient: "var(--gradient-ghibli)",
     shadow: "var(--shadow-glow-ghibli)",
     font: "var(--font-serif)",
+    coverImage: "/covers/ghibli-cover.jpeg",
     filter: {
       saturate: 1.1,
       contrast: 0.95,

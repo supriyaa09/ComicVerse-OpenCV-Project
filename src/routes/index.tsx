@@ -137,13 +137,21 @@ function UniverseCard({
         className="group relative block aspect-[4/5] overflow-hidden rounded-sm border border-border/60 bg-card transition-all duration-500 hover:border-white/40"
         style={{ boxShadow: `0 1px 0 0 rgba(255,255,255,0.04) inset` }}
       >
-        {/* Color slab */}
+        {/* Cover reference */}
+        <img
+          src={universe.coverImage}
+          alt={`${universe.name} style cover reference`}
+          className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          loading="eager"
+        />
+
+        {/* Color wash */}
         <motion.div
-          className="absolute inset-0 opacity-70 transition-opacity duration-500 group-hover:opacity-100"
+          className="absolute inset-0 opacity-35 mix-blend-color transition-opacity duration-500 group-hover:opacity-20"
           style={{ background: universe.gradient }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-        <div className="pointer-events-none absolute inset-0 halftone-bg text-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/10" />
+        <div className="pointer-events-none absolute inset-0 halftone-bg text-black/10" />
 
         {/* Number */}
         <div className="absolute left-5 top-5 font-mono text-xs uppercase tracking-[0.3em] text-white/80">
