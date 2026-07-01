@@ -172,7 +172,7 @@ HUGGINGFACE_TOKEN=
 Start the backend in Terminal 1:
 
 ```powershell
-cd "C:\Users\Abhishek\Downloads\ComicVerse(v1)\ComicVerse"
+cd <Project_Directory>
 npm run backend
 ```
 
